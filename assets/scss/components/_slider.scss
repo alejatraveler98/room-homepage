@@ -1,0 +1,10 @@
+.about-furniture{
+    &__title{
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: .4rem;
+    }
+    &__paragraph{
+        color:var(--dark-gray);
+    }
+}

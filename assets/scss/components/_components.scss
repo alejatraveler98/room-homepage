@@ -1,0 +1,22 @@
+.icon-close{
+    width:2rem;
+    margin-right: 2rem;
+    @include media(medium){
+          display: none;
+    }
+}
+
+.main-nav__container{
+    @include flex(row,space-between,center);
+    width: 100%;
+    margin-bottom:2rem;
+}
+
+.display{
+    display: none;
+    @include media(medium){
+         display:block; 
+    }
+    // opacity: 0;
+    // height: 0;
+}

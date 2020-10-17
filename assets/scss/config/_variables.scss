@@ -5,7 +5,7 @@ $header-height: 3rem;
 contiene las medidas que vamos a manejar para nuestras pantallas ya dependera
 de nosotros que medidas vamos a tomar porque */
 $breakpoints : (
-        small : 320px,
+        small : 375px,
         medium: 640px,
         large : 960px,
         xlarge: 1440px
@@ -22,26 +22,27 @@ $breakpoints : (
 
 //Paleta de colores
 :root{
-//     ---color: #00A24D;
-//     ---color:#A8CF45;
-//     ---color: #E4735B;
-//     ---color:#333333;
-// 
+    --dark-gray     : hsl(0,0%,63%);
+    --black         : hsl(0,0%,0%);
+    --white         : hsl(0,0%,100%);
+    --very-dark-gray: hsl(0,0%,27%);
+
 }
 
 //Variables de tipografia 
 :root{
-    --h1-font-size :1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --small-font-size:.95rem;
+    --h1-font-size   : 1.5rem;
+    --h2-font-size   : 1.25rem;
+    --h3-font-size   : 1rem;
+    --body-font-size : 12px;
+    --small-font-size: .95rem;
 }
 
 @include media(small) {
-    --h1-font-size   : 2.5rem;
+    --h1-font-size   : 2rem;
     --h2-font-size   : 1.75rem;
     --h3-font-size   : 1.5rem;
-    --body-font-size : 1rem;
-    --small-font-size: .8rem;
+    --body-font-size : 12px;
+    --small-font-size: .9rem;
   }
 

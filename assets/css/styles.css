@@ -1,0 +1,205 @@
+/*Para ocupar el mixin se requiere de un breakpoint, este breakpoint
+contiene las medidas que vamos a manejar para nuestras pantallas ya dependera
+de nosotros que medidas vamos a tomar porque */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap");
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000; }
+
+:root {
+  --dark-gray: hsl(0,0%,63%);
+  --black: hsl(0,0%,0%);
+  --white: hsl(0,0%,100%);
+  --very-dark-gray: hsl(0,0%,27%); }
+
+:root {
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --body-font-size: 12px;
+  --small-font-size: .95rem; }
+
+@media screen and (min-width: 375px) {
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --body-font-size: 12px;
+  --small-font-size: .9rem; }
+
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Spartan", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: normal;
+  /*Example of use 
+   @include font (italic,400,1, 5px)
+   @include font (normal,400, normal,normal)
+   */ }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+  @media screen and (min-width: 640px) {
+    a {
+      display: inline-block; } }
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0; }
+
+img {
+  width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0; }
+
+h1 {
+  font-size: var(--h1-font-size); }
+
+h2 {
+  font-size: var(--h2-font-size); }
+
+.l-container {
+  max-width: 1200px;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+  @media screen and (min-width: 960px) {
+    .l-container {
+      margin-left: auto;
+      margin-right: auto; } }
+
+.center {
+  text-align: center; }
+  @media screen and (min-width: 960px) {
+    .center {
+      text-align: left; } }
+
+.mb-1 {
+  margin-bottom: 1rem; }
+
+.mb-2 {
+  margin-bottom: 2rem; }
+
+.mb-separation {
+  margin-bottom: 4rem; }
+
+.icon-close {
+  width: 2rem;
+  margin-right: 2rem; }
+  @media screen and (min-width: 640px) {
+    .icon-close {
+      display: none; } }
+
+.main-nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem; }
+
+.display {
+  display: none; }
+  @media screen and (min-width: 640px) {
+    .display {
+      display: block; } }
+
+.main-nav {
+  top: 1rem;
+  width: 100%; }
+  .main-nav__list {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    animation: taadaa 1s; }
+  @media screen and (min-width: 640px) {
+    .main-nav__listM {
+      position: absolute;
+      top: 0;
+      width: 100%; } }
+  .main-nav__list::after {
+    content: '';
+    display: block;
+    position: fixed;
+    opacity: 0.5;
+    top: 7rem;
+    background-color: var(--black);
+    height: 100%;
+    width: 100%; }
+  .main-nav__item {
+    padding: 1rem;
+    font-size: 13px;
+    text-transform: lowercase;
+    color: black;
+    font-weight: 700; }
+  .main-nav__hamburger {
+    width: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem; }
+    @media screen and (min-width: 640px) {
+      .main-nav__hamburger {
+        display: none; } }
+  .main-nav__title {
+    width: 4rem;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+
+.information-paragraph {
+  line-height: 1.4rem;
+  color: var(--dark-gray); }
+
+.information-link {
+  color: var(--black);
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  display: flex; }
+
+.information-link::after {
+  content: '';
+  display: block;
+  background-image: url(/assets/img/icon-arrow.svg);
+  background-repeat: no-repeat;
+  width: 3rem;
+  margin-left: 2rem; }
+
+@keyframes taadaa {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.about-furniture__title {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: .4rem; }
+
+.about-furniture__paragraph {
+  color: var(--dark-gray); }
+
+.frontend, .author {
+  display: block; }
+
+.frontend-link {
+  color: #ed2c49; }
+
+.author-name {
+  color: #24292e; }

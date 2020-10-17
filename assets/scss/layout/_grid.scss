@@ -1,7 +1,7 @@
-$padding: 1rem;
+$padding: 2rem;
 $mb     : 1rem;
 
-.l-container {
+.l-container{
     max-width    : 1200px;
     padding-left : $padding;
     padding-right: $padding;
@@ -13,10 +13,20 @@ $mb     : 1rem;
     
 }
 
+.center{
+    text-align:center;
+    @include media(large){
+         text-align: left; 
+    }
+}
 .mb-1{
     @include mb(1rem)
 }
 
 .mb-2{
     @include mb(2rem);
+}
+
+.mb-separation{
+    @include mb(4rem);
 }
