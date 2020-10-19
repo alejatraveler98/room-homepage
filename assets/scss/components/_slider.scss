@@ -1,4 +1,19 @@
+.about{
+    @include media(medium){
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;          
+    }
+    
+}
+
+.about-image{
+    // width:4rem;
+}
+
 .about-furniture{
+    @include media(medium){
+        padding:3rem;
+    }
     &__title{
         text-transform: uppercase;
         font-size: 12px;
@@ -6,5 +21,8 @@
     }
     &__paragraph{
         color:var(--dark-gray);
+        @include media(medium){
+            font-size: .8rem;
+        }
     }
 }

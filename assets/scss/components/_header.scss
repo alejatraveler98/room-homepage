@@ -1,4 +1,36 @@
+.main-header{
+    
+    @include media(medium){
+        display:flex;
+        justify-content: space-between;
+        // height: 70vh;
+        // width:70vw;
+        // background-color:red;
+        height:500px; 
+    }
 
+    &__content{
+        @include media(medium){
+             display:flex;
+             justify-content: space-between; 
+        }
+    }
+    &__image{
+        @include media(medium){
+            background-color:blue;
+            // height:100%;
+        }
+    }
+}
+
+.img{
+    @include media(medium){
+        // height:60vh;
+        // width:60vw ;
+        height:100%;
+      
+    }
+}
 .main-nav{
 
     top:1rem;
@@ -13,14 +45,18 @@
         @include flex(row,space-around,center);
         animation: taadaa 1s;
 
-
+        
     }
-
+    
     &__listM{
         @include media(medium){
             position: absolute;
-            top: 0;
+            top: 2rem;
+            left:8rem;
             width: 100%;
+            display:flex; 
+            justify-content: flex-start;
+            
         }
     }
 
@@ -44,8 +80,12 @@
         text-transform: lowercase;
         color:black;
         font-weight: 700;
+        
+        @include media(medium){
+             color: var(--white);
+        }
     }
-
+    
     &__hamburger{
         width:2rem;
         position: absolute;
@@ -64,13 +104,31 @@
         left:0;
         right:0;
         margin:0 auto;
+        @include media(medium){
+            top:3rem;
+            left:2rem; 
+            margin:initial;
+        }
     }
 }
 
 .information{
+    @include media(medium){
+        width:40vw;
+        padding:4rem;  
+    }
+
+    &-title{
+        @include media(medium){
+            font-size:2.2rem;
+        }
+    }
     &-paragraph{
         line-height: 1.4rem;
         color:var(--dark-gray);
+        @include media(medium){
+             font-size:.7rem; 
+        }
     }
 
     &-link{
@@ -78,7 +136,9 @@
         letter-spacing: .5rem;
         text-transform: uppercase;
         display: flex;
-        
+        @include media(medium){
+            font-size:.7rem;
+        }
     }
 
     &-link::after{
