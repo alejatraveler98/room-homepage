@@ -5,7 +5,8 @@
 
 body{
     margin:0;
-    @include font('Spartan',normal,400,normal,normal)
+    @include font('Spartan',normal,400,normal,normal);
+    overflow-x: hidden;
 }
 
 a{

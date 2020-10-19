@@ -1,28 +1,30 @@
 .about{
-    @include media(medium){
+    // height: 10%;
+    // max-width: 1200px;
+    @include media(large){
         display: grid;
         grid-template-columns: 1fr 1.5fr 1fr;          
+        justify-content: center;       
     }
     
 }
 
 .about-image{
-    // width:4rem;
+    // margin-bottom: 1rem;
+
 }
 
 .about-furniture{
-    @include media(medium){
-        padding:3rem;
-    }
+    padding: 4rem;
     &__title{
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: .4rem;
     }
     &__paragraph{
         color:var(--dark-gray);
+        font-size: .8rem;
         @include media(medium){
-            font-size: .8rem;
         }
     }
 }
