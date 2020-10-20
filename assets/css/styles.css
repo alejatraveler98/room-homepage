@@ -94,8 +94,7 @@ h2 {
   margin-bottom: 4rem; }
 
 .icon-close {
-  width: 2rem;
-  margin-right: 2rem; }
+  width: 2rem; }
   @media screen and (min-width: 640px) {
     .icon-close {
       display: none; } }
@@ -113,6 +112,34 @@ h2 {
   @media screen and (min-width: 640px) {
     .display {
       display: block; } }
+
+.arrows {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -4.3rem;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 640px) {
+    .arrows {
+      justify-content: center; } }
+  @media screen and (min-width: 960px) {
+    .arrows {
+      justify-content: end;
+      margin-bottom: 0;
+      margin-right: -7.9rem; } }
+  .arrows-container {
+    width: 4rem;
+    height: 4rem;
+    /*
+    @include box (200px,300px)
+    @include box (200px)
+  */
+    background-color: black;
+    padding: 1.5rem;
+    display: flex; }
+
+.arrow {
+  width: 100%;
+  text-align: center; }
 
 @media screen and (min-width: 960px) {
   .main-header {

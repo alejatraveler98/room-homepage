@@ -1,6 +1,6 @@
 .icon-close{
     width:2rem;
-    margin-right: 2rem;
+    // margin-right: 2rem;
     @include media(medium){
           display: none;
     }
@@ -17,4 +17,30 @@
     @include media(medium){
          display:block; 
     }
+}
+
+.arrows{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -4.3rem;
+    margin-bottom: 3rem;
+    @include media(medium){
+        justify-content: center;
+    }
+    
+    @include media(large){
+        justify-content: end;
+        margin-bottom: 0;
+        margin-right: -7.9rem;
+    }   
+    &-container{
+        @include box(4rem);
+        background-color: black;
+        padding: 1.5rem;
+        display: flex;
+    }
+}
+.arrow{
+    width: 100%;
+    text-align: center;
 }
