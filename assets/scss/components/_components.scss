@@ -1,5 +1,5 @@
 .icon-close{
-    width:2rem;
+    width: 2rem;
     // margin-right: 2rem;
     @include media(medium){
           display: none;
@@ -8,39 +8,39 @@
 
 .main-nav__container{
     @include flex(row,space-between,center);
-    width: 100%;
-    margin-bottom:2rem;
+    width        : 100%;
+    margin-bottom: 2rem;
 }
 
 .display{
     display: none;
     @include media(medium){
-         display:block; 
+         display: block;
     }
 }
 
 .arrows{
-    display: flex;
+    display        : flex;
     justify-content: flex-end;
-    margin-top: -4.3rem;
-    margin-bottom: 3rem;
+    margin-top     : -4.3rem;
+    margin-bottom  : 3rem;
     @include media(medium){
         justify-content: center;
     }
     
     @include media(large){
         justify-content: end;
-        margin-bottom: 0;
-        margin-right: -7.9rem;
+        margin-bottom  : 0;
+        margin-right   : -7.9rem;
     }   
     &-container{
         @include box(4rem);
         background-color: black;
-        padding: 1.5rem;
-        display: flex;
+        padding         : 1.5rem;
+        display         : flex;
     }
 }
 .arrow{
-    width: 100%;
+    width     : 100%;
     text-align: center;
 }

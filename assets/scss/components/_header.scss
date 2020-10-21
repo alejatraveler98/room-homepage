@@ -1,45 +1,35 @@
 .main-header{
-    
     @include media(large){
-        display:flex;
+        display        : flex;
         justify-content: space-between;
-        align-items: center;
-        flex-wrap: nowrap;
-        height:500px; 
+        align-items    : center;
+        flex-wrap      : nowrap;
+        height         : 500px;
     }
-
-    &__content{
-        // @include media(large){
-        //      display:flex;
-        //      justify-content: space-between; 
-        // }
-    }
-    &__image{
-        @include media(large){
-            height: 500px;
+        &__image{
+            @include media(large){
+                height: 500px;
         }
     }
 }
 
 .img{
     @include media(large){
-        // height:60vh;
-        // width:100%;
-        height:100%;
+        height: 100%;
       
     }
 }
 .main-nav{
 
-    top:1rem;
+    top  : 1rem;
     width: 100%;
 
     &__list{
-        position: fixed;
-        top: 0;
-        width: 100%;
+        position        : fixed;
+        top             : 0;
+        width           : 100%;
         background-color: var(--white);
-        padding-top: 2rem;
+        padding-top     : 2rem;
         @include flex(row,space-around,center);
         animation: taadaa 1s;
 
@@ -48,33 +38,33 @@
     
     &__listM{
         @include media(medium){
-            position: absolute;
-            top: 2rem;
-            left:8rem;
-            width: 100%;
-            display:flex; 
+            position       : absolute;
+            top            : 2rem;
+            left           : 8rem;
+            width          : 100%;
+            display        : flex;
             justify-content: flex-start;
             
         }
     }
 
     &__list::after{
-        content: '';
-        display: block;
-        position: fixed;
-        opacity: 0.5;
-        top:7rem;
-        background-color:var(--black) ;
-        height: 100%;
-        width: 100%;
+        content         : '';
+        display         : block;
+        position        : fixed;
+        opacity         : 0.5;
+        top             : 7rem;
+        background-color: var(--black) ;
+        height          : 100%;
+        width           : 100%;
         
     }
     &__item{
-        padding: 1rem;
-        font-size: 13px;
+        padding       : 1rem;
+        font-size     : 13px;
         text-transform: lowercase;
-        color:black;
-        font-weight: 700;
+        color         : black;
+        font-weight   : 700;
         
         @include media(medium){
              color: var(--white);
@@ -82,27 +72,27 @@
     }
     
     &__hamburger{
-        width:2rem;
+        width   : 2rem;
         position: absolute;
-        top:2rem;
-        left:2rem;
+        top     : 2rem;
+        left    : 2rem;
 
         @include media(medium){
-            display:none; 
+            display: none;
        }
     }
 
     &__title{
-        width: 4rem;
+        width   : 4rem;
         position: absolute;
-        top: 2rem;
-        left:0;
-        right:0;
-        margin:0 auto;
+        top     : 2rem;
+        left    : 0;
+        right   : 0;
+        margin  : 0 auto;
         @include media(medium){
-            top:3rem;
-            left:2rem; 
-            margin:initial;
+            top   : 3rem;
+            left  : 2rem;
+            margin: initial;
         }
     }
 }
@@ -113,49 +103,53 @@
         padding: 0 7rem;
     }
     @include media(large){
-        max-width:40%;
-        padding:4rem;
+        max-width: 40%;
+        padding  : 4rem;
         
     }
     @include media(slarge){
-        padding:6rem;  
+        padding: 6rem;
     }
     
     &-title{
         font-weight: 500;
         @include media(large){
-            font-size:1.6rem;
+            font-size: 1.6rem;
         }
     }
     &-paragraph{
-        font-size:.7rem; 
+        font-size  : .7rem;
         line-height: 1.4rem;
-        color:var(--dark-gray);
+        color      : var(--dark-gray);
         @include media(large){
         }
     }
 
     &-link{
-        color: var(--black);
+        color         : var(--black);
         letter-spacing: .5rem;
         text-transform: uppercase;
-        display: flex;
-        font-size:.6rem;
+        display       : flex;
+        font-size     : .6rem;
         @include media(large){
-            font-size:.7rem;
+            font-size: .7rem;
         }
     }
 
     &-link::after{
-        content: '';
-        display: block;
-        background-image: url(/assets/img/icon-arrow.svg);
+        content          : '';
+        display          : block;
+        background-image : url(/assets/img/icon-arrow.svg);
         background-repeat: no-repeat;
-        width:3rem;
-        margin-left: 2rem;
+        width            : 3rem;
+        margin-left      : 2rem;
         
     }
     
+}
+
+.animation{
+    animation: fade .4s;
 }
 @keyframes taadaa { 
     0% {
@@ -167,4 +161,8 @@
     }
   }
 
+@keyframes fade{
+    from{opacity: .4;}
+    to{opacity: 1;}
+}
  

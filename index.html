@@ -14,7 +14,7 @@
             <div class="main-header__content">
                 <!-- <img class="main-header__image" src="/assets/img/mobile-image-hero-1.jpg" alt="Mobile Image Heroo"> -->
                 <div class="main-header__image">
-                <img class="img" src="/assets/img/desktop-image-hero-1.jpg" alt="Mobile Image Heroo">
+                <img id="img-hero" class="img animation" src="/assets/img/desktop-image-hero-1.jpg" alt="Mobile Image Heroo">
                 <nav class="main-nav">
                     <img id="toggle" class="main-nav__hamburger" src="/assets/img/icon-hamburger.svg"
                         alt="Icon Hamburger">
@@ -30,11 +30,11 @@
                     <img class="main-nav__title center" src="/assets/img/logo.svg" alt="">
                 </nav>
                 <div class="arrows">
-                    <div class="arrows-container">
-                        <img class="arrow" src="/assets/img/icon-angle-left.svg" alt="Icon Arrow Left">
+                    <div id="left" class="arrows-container">
+                        <img  class="arrow" src="/assets/img/icon-angle-left.svg" alt="Icon Arrow Left">
                     </div>
-                    <div class="arrows-container">
-                        <img class="arrow" src="/assets/img/icon-angle-right.svg" alt="Icon Arrow Right">
+                    <div id="right" class="arrows-container">
+                        <img  class="arrow" src="/assets/img/icon-angle-right.svg" alt="Icon Arrow Right">
                     </div>
                 </div>
                 </div>
@@ -42,8 +42,8 @@
 
             <div id="information" class="information mb-separation">
                 <div>
-                    <h1 class="information-title center">Discover innovative ways to decorate</h1>
-                    <p class="information-paragraph mb-2">We provide unmatched quality, comfort, and style for property
+                    <h1 id="title" class="information-title center">Discover innovative ways to decorate</h1>
+                    <p id="paragraph" class="information-paragraph mb-2">We provide unmatched quality, comfort, and style for property
                         owners across
                         the country.
                         Our experts combine form andnfunction in bringing your vision to life. Create a room in your
@@ -52,14 +52,6 @@
                     <a class="information-link" href="#">Shop Now</a>
 
                 </div>    
-                <!-- <div class="arrows">
-                    <div class="arrows-container">
-                        <img class="arrow" src="/assets/img/icon-angle-left.svg" alt="Icon Arrow Left">
-                    </div>
-                    <div class="arrows-container">
-                        <img class="arrow" src="/assets/img/icon-angle-right.svg" alt="Icon Arrow Right">
-                    </div>
-                </div> -->
             </div>
         </header>
 
@@ -89,6 +81,7 @@
         </footer>
     </div>
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/actions.js"></script>
 </body>
 
 </html>
