@@ -1,4 +1,2 @@
-# web-projects
-Arquitectura de proyectos
+# Reto Frontend Mentor Room homepage
 
-Agregando carpetas faltantes en la estructura
