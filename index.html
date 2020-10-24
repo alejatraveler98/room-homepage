@@ -14,36 +14,41 @@
             <div class="main-header__content">
                 <!-- <img class="main-header__image" src="/assets/img/mobile-image-hero-1.jpg" alt="Mobile Image Heroo"> -->
                 <div class="main-header__image">
-                <img id="img-hero" class="img animation" src="/assets/img/desktop-image-hero-1.jpg" alt="Mobile Image Heroo">
-                <nav class="main-nav">
-                    <img id="toggle" class="main-nav__hamburger" src="/assets/img/icon-hamburger.svg"
-                        alt="Icon Hamburger">
-                    <ul id="main-nav__list" class="l-container">
-                        <div id="main-nav__container" class="display main-nav__listM">
-                            <img id="icon-close" class="icon-close" src="/assets/img/icon-close.svg" alt="">
-                            <li class="main-nav__item"><a class="main-nav__link" href="#">Home</a></li>
-                            <li class="main-nav__item"><a class="main-nav__link" href="#">Shop</a></li>
-                            <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
-                            <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+                    <picture>
+                        <source id="img-hero-mobile" srcset="/assets/img/mobile-image-hero-1.jpg" media="(max-width:640px)">
+                        <img id="img-hero-desktop" class="img animation" src="/assets/img/desktop-image-hero-1.jpg"
+                            alt="Mobile Image Hero">
+                    </picture>
+                    <nav class="main-nav">
+                        <img id="toggle" class="main-nav__hamburger" src="/assets/img/icon-hamburger.svg"
+                            alt="Icon Hamburger">
+                        <ul id="main-nav__list" class="l-container">
+                            <div id="main-nav__container" class="display main-nav__listM">
+                                <img id="icon-close" class="icon-close" src="/assets/img/icon-close.svg" alt="">
+                                <li class="main-nav__item"><a class="main-nav__link" href="#">Home</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="#">Shop</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="#">About</a></li>
+                                <li class="main-nav__item"><a class="main-nav__link" href="#">Contact</a></li>
+                            </div>
+                        </ul>
+                        <img class="main-nav__title center" src="/assets/img/logo.svg" alt="">
+                    </nav>
+                    <div class="arrows">
+                        <div id="left" class="arrows-container">
+                            <img class="arrow" src="/assets/img/icon-angle-left.svg" alt="Icon Arrow Left">
                         </div>
-                    </ul>
-                    <img class="main-nav__title center" src="/assets/img/logo.svg" alt="">
-                </nav>
-                <div class="arrows">
-                    <div id="left" class="arrows-container">
-                        <img  class="arrow" src="/assets/img/icon-angle-left.svg" alt="Icon Arrow Left">
+                        <div id="right" class="arrows-container">
+                            <img class="arrow" src="/assets/img/icon-angle-right.svg" alt="Icon Arrow Right">
+                        </div>
                     </div>
-                    <div id="right" class="arrows-container">
-                        <img  class="arrow" src="/assets/img/icon-angle-right.svg" alt="Icon Arrow Right">
-                    </div>
-                </div>
                 </div>
             </div>
 
             <div id="information" class="information mb-separation">
                 <div>
                     <h1 id="title" class="information-title center">Discover innovative ways to decorate</h1>
-                    <p id="paragraph" class="information-paragraph mb-2">We provide unmatched quality, comfort, and style for property
+                    <p id="paragraph" class="information-paragraph mb-2">We provide unmatched quality, comfort, and
+                        style for property
                         owners across
                         the country.
                         Our experts combine form andnfunction in bringing your vision to life. Create a room in your
@@ -51,7 +56,7 @@
                     </p>
                     <a class="information-link" href="#">Shop Now</a>
 
-                </div>    
+                </div>
             </div>
         </header>
 
@@ -69,13 +74,14 @@
             <img class="about-image" src="/assets/img/image-about-light.jpg" alt="About Light">
 
         </div>
-        
+
         <footer class="footer center">
             <div class="attribution">
                 <div class="frontend center"> Challenge by <a class="frontend-link"
                         href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
                         Mentor</a>.</div>
-                <span class="author center">Coded by <a class="author-name" href="https://github.com/alejatraveler98" target="_blank">🇲🇽 Alejandro Ramírez
+                <span class="author center">Coded by <a class="author-name" href="https://github.com/alejatraveler98"
+                        target="_blank">🇲🇽 Alejandro Ramírez
                         Gómez</a>.</span>
             </div>
         </footer>
